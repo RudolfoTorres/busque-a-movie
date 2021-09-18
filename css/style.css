@@ -32,10 +32,18 @@ body {
 .banner-footer {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-evenly;
+    text-align: center;
     width: 100%;
     height: 90%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,1));
+    font-size: 1.8rem;
+}
+
+.banner-footer a {
+    width: 70px;
+    position: relative;
+    bottom: 15px;
 }
 
 #nota > p {

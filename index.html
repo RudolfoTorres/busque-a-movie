@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>infoMovies</title>
@@ -12,33 +14,39 @@
     <div class="banner" id="banner">
         <div class="genero caixinha" id="genero"></div>
         <div class="duracao caixinha" id="duracao"></div>
-        <div class="banner-footer">
-            <div class="pesquisa">
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="caixinha" id="nota"></div>
-            <div class="more-info">
 
-            </div>
+        <div class="banner-footer">
+            <a href="#" class="pesquisa">
+                <i class='bx bx-search-alt'></i>
+                <p>search</p>
+            </a>
+
+            <div class="caixinha" id="nota"></div>
+
+            <a href="#" class="more-info">
+                <i class='bx bx-info-circle' ></i>
+                <p>more info</p>
+            </a>
         </div>
     </div>
+    
     <div class="info">
         <div class="titulo" id="titulo"></div>
         <div class="sinopse" id="sinopse"></div>
+
         <div class="rodape">
             <div class="diretor">
                 <h4>Director:</h4>
                 <p id="diretor"></p>
             </div>
+
             <div class="ano">
                 <h4>Year:</h4>
                 <p id="ano"></p>
             </div>
         </div>
     </div>
+
 </body>
 <script src="js/api.js"></script>
 </html>
