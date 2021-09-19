@@ -8,15 +8,15 @@ body {
 }
 
 .banner {
-    width: 100%;
-    height: 70%;
+    display: block;
+    position: relative;
+    height: 65%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .caixinha {
-    /* position: relative; */
     display: inline-block;
     background-color: rgb(255, 0, 0);
     border-radius: 10px;
@@ -26,24 +26,44 @@ body {
 }
 
 .banner p {
-    font-size: 1rem;
+    font-size: .8rem;
 } 
 
-.banner-footer {
+.caixa-info {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 15px;
+}
+
+/* .caixa-info p {
+    font-size: .8rem;
+} */
+
+.caixa-info h4 {
+    margin-bottom: 0;
+    color: red;
+    font-size: 1rem;
+}
+
+.pais-classificacao {
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.banner-footer {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    width: 100%;
-    height: 90%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,1));
     font-size: 1.8rem;
+    bottom: 0;
 }
 
 .banner-footer a {
     width: 70px;
-    position: relative;
-    bottom: 15px;
 }
 
 #nota > p {
@@ -53,7 +73,18 @@ body {
 }
 
 .info {
-    padding: 15px;
+    display: block;
+    padding: 0 15px 15px 15px;
+}
+
+.titulo {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.sinopse {
+    margin-top: 15px;
+    font-size: 1rem;
 }
 
 .rodape {
@@ -65,8 +96,4 @@ body {
 .rodape h4 {
     position: relative;
     top: 10px;
-}
-
-.rodape p {
-    font-size: 1rem;
 }

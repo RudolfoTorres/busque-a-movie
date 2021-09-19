@@ -1,4 +1,4 @@
-const url = "https://www.omdbapi.com/?apikey=d93d7cce&t=avengers endgame";
+const url = "https://www.omdbapi.com/?apikey=d93d7cce&t=lord of the rings";
 
 function infoAPI(url){
   fetch(url)
@@ -28,6 +28,18 @@ function infoAPI(url){
     diretor.innerHTML = `<p>${movie.Director}</p>`;
     let ano = document.getElementById("ano");
     ano.innerHTML = `<p>&nbsp;${movie.Year}</p>`;
+
+    let elenco = document.getElementById("elenco");
+    elenco.innerHTML = `<p>${movie.Actors}</p>`;
+    let premios = document.getElementById("premios");
+    premios.innerHTML = `<p>${movie.Awards}</p>`;
+    let produtora = document.getElementById("produtora");
+    produtora.innerHTML = `<p>${movie.Production}</p>`;
+    let pais = document.getElementById("pais");
+    pais.innerHTML = `<p>${movie.Country}</p>`;
+    let classificacao = document.getElementById("classificacao");
+    classificacao.innerHTML = `<p>${movie.Rated}</p>`;
+
   })
   .catch(function(error) {
     console.log(error);
