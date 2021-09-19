@@ -1,4 +1,4 @@
-const url = "https://www.omdbapi.com/?apikey=d93d7cce&t=lord of the rings";
+const url = "https://www.omdbapi.com/?apikey=d93d7cce&t=avengers endgame";
 
 function infoAPI(url){
   fetch(url)
@@ -8,7 +8,7 @@ function infoAPI(url){
     console.log(movie);
 
     let banner = document.getElementById("banner");
-    banner.style.backgroundImage = `url("${movie.Poster}"`;
+    banner.style.backgroundImage = `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0,0,0,1)), url("${movie.Poster}"`;
 
     let genero = document.getElementById("genero");
     genero.innerHTML = `<p>${movie.Genre}</p>`;
