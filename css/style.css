@@ -41,7 +41,7 @@ body {
     background-color: rgba(0, 0, 0, .7);
     border-radius: 15px;
     opacity: 0;
-    transition: opacity .5s linear;
+    transition: opacity .3s linear;
 }
 
 .mostra{
