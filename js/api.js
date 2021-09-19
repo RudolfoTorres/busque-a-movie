@@ -1,4 +1,4 @@
-const url = "https://www.omdbapi.com/?apikey=d93d7cce&t=avengers endgame";
+const url = "https://www.omdbapi.com/?apikey=d93d7cce&t=lord of the rings";
 
 function infoAPI(url){
   fetch(url)

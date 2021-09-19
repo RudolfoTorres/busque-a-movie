@@ -77,7 +77,7 @@ body {
 .info {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0 15px 15px 15px;
 }
 
