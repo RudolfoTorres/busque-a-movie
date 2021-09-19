@@ -40,6 +40,13 @@ body {
     padding: 15px;
     background-color: rgba(0, 0, 0, .7);
     border-radius: 15px;
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+.mostra{
+    opacity: 1;
+    pointer-events: none;
 }
 
 .caixa-info h4 {

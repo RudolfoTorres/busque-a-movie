@@ -47,3 +47,11 @@ function infoAPI(url){
 }
 
 infoAPI(url);
+
+function mostrarEsconder(el) {
+  if(document.getElementById(el).classList.contains("mostra")) {
+    document.getElementById(el).classList.remove('mostra');
+  } else {
+    document.getElementById(el).classList.add('mostra');
+  }  
+}
