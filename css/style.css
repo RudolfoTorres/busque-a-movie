@@ -36,6 +36,22 @@ body {
     bottom: 0;
 }
 
+.select-movie {
+    display: block;
+    width: 70%;
+    border-radius: 15px;
+    padding: 5px;
+    margin-left: 15px;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 5px 5px 5px black;
+}
+
+.select-wrapper {
+    opacity: 0;
+    transition: opacity .3s linear;
+    z-index: 1;
+}
+
 .caixa-info {
     padding: 15px;
     background-color: rgba(0, 0, 0, .7);
@@ -46,7 +62,6 @@ body {
 
 .mostra{
     opacity: 1;
-    pointer-events: none;
 }
 
 .caixa-info h4 {

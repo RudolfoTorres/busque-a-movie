@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOX ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"><!-- BOX ICONS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>busque-a-movie</title>
@@ -15,11 +14,14 @@
         <div class="genero caixinha" id="genero"></div>
         <div class="duracao caixinha" id="duracao"></div>
 
-        <div class="caixa-pesquisa">
-
-        </div>
-
         <div class="wrapper">
+            <div class="caixa-info" id="select-wrapper">
+                <input type="text" class="select-movie" id="select-movie">
+                <select class="select-movie" id="movies-select">
+                    <option value="" disabled selected>Type and choose your movie</option>
+                </select>
+            </div>
+
             <div class="caixa-info" id="caixa-info">
                 <div class="elenco">
                     <h4>Cast:</h4>
@@ -46,7 +48,7 @@
             </div>
 
             <div class="banner-footer">
-                <a href="#" class="pesquisa">
+                <a href="#" class="pesquisa" onclick="mostrarEsconder('select-wrapper')">
                     <i class='bx bx-search-alt'></i>
                     <p>search</p>
                 </a>
